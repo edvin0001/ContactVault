@@ -1,0 +1,129 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+.container {
+    max-width: 1056px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+form input,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 30%;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  flex: 1 1 100px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Search Input */
+#search {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Contact Cards */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card {
+  background-color: #e3f2fd;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #2196f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-details {
+  line-height: 1.4;
+}
+
+.delete-btn {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.button{
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  
+}
+.Details{
+  border: none;
+  padding: 7px;
+  border-radius: 50px;
+  background-color: #45a049;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  margin-bottom: 15px;
+}
+.Details:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+  color:wheat;
+  padding: 7px;
+  border-radius: 15px;
+}
