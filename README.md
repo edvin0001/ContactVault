@@ -24,6 +24,3 @@
 
 ---
 
-## 📸 Preview
-
-*(You can add a screenshot here if you'd like)*  
