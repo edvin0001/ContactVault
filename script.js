@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function () {
                     <div class="email">${contact.email}</div>
                     <div class="icon-container">
                         <button class="delete" style="border: none; background-color: bisque; cursor:pointer">
-                            <img class="icon" src="dustbin.png" style="width: 30px; height: 28px;" alt="delete">
+                            <img class="icon" src="Delete.png" style="width: 30px; height: 28px;" alt="delete">
                         </button>
                     </div>
                 </div>`;
@@ -71,7 +71,7 @@ window.addEventListener("DOMContentLoaded", function () {
             let email = document.querySelector("#email").value;
             let phone_no = document.querySelector("#phone").value;
             if (localStorage.getItem(con_num)) {
-                alert("This name is already in use!")
+                alert("This unique code is already in use!")
                 return;
             }
             let tot_chararacters_in_phone_number = 0
@@ -95,13 +95,13 @@ window.addEventListener("DOMContentLoaded", function () {
                         }
                     }
                     if (!hasDomain) {
-                        alert("Please enter the correct email account")
+                        alert("Please enter the correct email domain")
                     }
                     else {
                         tot_chararacters_in_phone_number = phone_no.length;
                         first_number = phone_no[0]
                         if (tot_chararacters_in_phone_number > 10 || tot_chararacters_in_phone_number < 10 || (first_number < 6 || first_number > 9)) {
-                            alert("Invalid phone number as per Indian phone number structure")
+                            alert("Invalid phone number as per Indian phone number standards")
                         }
                         else {
                             row_names.push(con_num)
@@ -118,11 +118,11 @@ window.addEventListener("DOMContentLoaded", function () {
                                                                     height: 100px;">
                     <div class="con_num">#${con_num} => </div>
                     <div class="name">${name}</div>
-                    <div class="phone">${phone}</div>
+                    <div class="phone">${phone_no}</div>
                     <div class="email">${email}</div>
                     <div class="icon-container">
                         <button class="delete" style="border: none; background-color: bisque; cursor:pointer">
-                            <img class="icon" src="dustbin.png" style="width: 30px; height: 28px;" alt="delete">
+                            <img class="icon" src="Delete.png" style="width: 30px; height: 28px;" alt="delete">
                         </button>
                     </div>
                 </div>`;
